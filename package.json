@@ -1,7 +1,7 @@
 {
 	"name": "gcc",
-	"description": "Minify JavaScript files with Google Closure Compiler.",
-	"version": "0.1.0",
+	"description": "Node wrapper for Google Closure Compiler.",
+	"version": "0.1.1",
 	"homepage": "https://github.com/Darsain/node-gcc",
 	"author": {
 		"name": "Darsain",
@@ -35,6 +35,6 @@
 		"compile",
 		"compress",
 		"closure-compiler",
-		"gcc",
+		"gcc"
 	]
 }
