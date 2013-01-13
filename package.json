@@ -1,0 +1,40 @@
+{
+	"name": "gcc",
+	"description": "Minify JavaScript files with Google Closure Compiler.",
+	"version": "0.1.0",
+	"homepage": "https://github.com/Darsain/node-gcc",
+	"author": {
+		"name": "Darsain",
+		"url": "http://darsa.in"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Darsain/node-gcc.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Darsain/node-gcc/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://opensource.org/licenses/MIT"
+		}
+	],
+	"main": "lib/gcc.js",
+	"engines": {
+		"node": "*"
+	},
+	"scripts": {
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+	},
+	"keywords": [
+		"minify",
+		"compile",
+		"compress",
+		"closure-compiler",
+		"gcc",
+	]
+}
