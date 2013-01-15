@@ -57,7 +57,7 @@ Function that does the compiling. Arguments:
 
 - **source** `Mixed` : Path, or an array of paths to JavaScript files that should be concatenated and minified.
 - **destination** `String` : When specified, output will be saved to this path.
-- **options** `Object` : Object with Closure Compiler options. Overrides `compiler.defaults`.
+- **options** `Object` : Object with Closure Compiler options. Extends `compiler.defaults`.
 - **callback** `Function` : When specified, will be executed at the end of the compiling process. Accepts 2 arguments:
 	`error` which is `null` when no errors occurred, and `stdout` containing the minified code.
 
@@ -85,7 +85,7 @@ compiler.compile(['example1.js', 'example2.js'], function (error, output) {
 
 All options are passed as keys in an options object.
 
-If an option is a flag with no input value, just pass `true` as an option value:
+If an option is a flag with no input value, pass `true` as an option value:
 
 ```js
 compiler.compile('example.js', 'result.js', {
@@ -110,8 +110,8 @@ compiler.compile('example.js', 'result.js', {
 ### compilation_level:
 
 - `WHITESPACE_ONLY` : Removes comments, line breaks, unnecessary spaces, and other whitespace.
-- `SIMPLE_OPTIMIZATIONS` *default* : Previous plus shortens local variables, function names, and function parameters.
-- `ADVANCED_OPTIMIZATIONS` : Previous but also for **global** variables, function names, and function parameters.
+- `SIMPLE_OPTIMIZATIONS` : ^ plus shortens local variables, function names, and function parameters.
+- `ADVANCED_OPTIMIZATIONS` : ^ but also for **global** variables, function names, and function parameters.
 
 For more specific explanation, visit the [Closure Compiler Compilation Levels documentation](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
@@ -230,7 +230,7 @@ For more specific explanation, visit the [Closure Compiler Compilation Levels do
                                           include files that got dropped
                                           because they were not required. The
                                           %outname% placeholder expands to the
-                                          js output file. If you're using
+                                          js output file. If you are using
                                           modularization, using %outname% will
                                           create a manifest for each module.
  --output_wrapper VAL                   : Interpolate output into this string
