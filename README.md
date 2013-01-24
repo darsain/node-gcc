@@ -58,8 +58,9 @@ Function that does the compiling. Arguments:
 - **source** `Mixed` : Path, or an array of paths to JavaScript files that should be concatenated and minified.
 - **destination** `String` : When specified, output will be saved to this path.
 - **options** `Object` : Object with Closure Compiler options. Extends `compiler.defaults`.
-- **callback** `Function` : When specified, will be executed at the end of the compiling process. Accepts 2 arguments:
-	`error` which is `null` when no errors occurred, and `stdout` containing the minified code.
+- **callback** `Function` : When specified, will be executed at the end of the compiling process. Accepts 3 arguments:
+	`error` which is `null` when no errors occurred, `stdout` containing the minified code, and `stderr` containing
+	the error output.
 
 ###### Examples:
 
@@ -72,11 +73,11 @@ compiler.compile('example.js', 'result.js', { compilation_level: 'WHITESPACE_ONL
 Compile `example1.js` and `example2.js` with default options, and handle the output in callback.
 
 ```js
-compiler.compile(['example1.js', 'example2.js'], function (error, output) {
+compiler.compile(['example1.js', 'example2.js'], function (error, stdout, stderr) {
 	if (error) {
 		console.log(error);
 	} else {
-		console.log('Minified size: ' + output.length + 'bytes');
+		console.log('Minified size: ' + stdout.length + 'bytes');
 	}
 });
 ```
