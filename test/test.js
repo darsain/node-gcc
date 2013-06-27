@@ -10,5 +10,15 @@ var src = [
 var dest = path.resolve(__dirname, 'tmp/result.js');
 
 fs.unlink(dest, function () {
-	compiler.compile(src, dest, function () {});
+	var compilation = compiler.compile(src, dest, function (err, stdout, stderr) {
+		if (stderr) {
+			console.log('Error: ' + stderr);
+		} else {
+			console.log('Compiled size: ' + (stdout.length / 1024).toFixed(2) + ' KiB');
+		}
+	});
+
+	compilation.on('close', function () {
+		console.log('Process end');
+	});
 });
