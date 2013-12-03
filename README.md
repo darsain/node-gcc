@@ -2,7 +2,7 @@
 
 Node wrapper for Google Closure Compiler.
 
-### [Changelog](https://github.com/Darsain/node-gcc/wiki/Changelog)
+### [Changelog](https://github.com/darsain/node-gcc/wiki/Changelog)
 
 GCC upholds the [Semantic Versioning Specification](http://semver.org/).
 
