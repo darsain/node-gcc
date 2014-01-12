@@ -1,7 +1,7 @@
 {
 	"name": "gcc",
 	"description": "Node wrapper for Google Closure Compiler.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"homepage": "https://github.com/darsain/node-gcc",
 	"author": {
 		"name": "Darsain",
