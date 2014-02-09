@@ -1,7 +1,7 @@
 {
 	"name": "gcc",
-	"description": "Node wrapper for Google Closure Compiler.",
-	"version": "1.0.1",
+	"description": "This module is being deprecated in favor of closurecompiler, and will be eventually unpublished. Please migrate.",
+	"version": "1.0.2",
 	"homepage": "https://github.com/darsain/node-gcc",
 	"author": {
 		"name": "Darsain",
@@ -31,12 +31,5 @@
 		"grunt-tagrelease": "~0.2.0",
 		"grunt-bumpup": "~0.2.0",
 		"grunt": "~0.4.1"
-	},
-	"keywords": [
-		"minify",
-		"compile",
-		"compress",
-		"closure-compiler",
-		"gcc"
-	]
+	}
 }

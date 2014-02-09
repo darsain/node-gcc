@@ -1,5 +1,7 @@
 # gcc
 
+**This module is being deprecated in favor of [closurecompiler](https://npmjs.org/package/closurecompiler), and will be eventually unpublished. Please migrate.**
+
 Node wrapper for Google Closure Compiler.
 
 ### [Changelog](https://github.com/darsain/node-gcc/wiki/Changelog)
